@@ -5,5 +5,5 @@ services:
     ports:
       - "80:80"
     volumes:
-      - .:/usr/share/nginx/html
+      - /var/jenkins_home/workspace/Music_app:/usr/share/nginx/html:ro
     restart: always

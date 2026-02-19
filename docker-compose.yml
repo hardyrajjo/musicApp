@@ -1,9 +1,7 @@
 services:
   musicapp:
-    image: nginx:alpine
+    build: .
     container_name: musicapp
     ports:
       - "80:80"
-    volumes:
-      - /var/jenkins_home/workspace/Music_app:/usr/share/nginx/html:ro
     restart: always

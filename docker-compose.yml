@@ -1,1 +1,10 @@
+version: "3.8"
+
+services:
+  musicapp:
+    build: .
+    container_name: musicapp
+    ports:
+      - "80:80"
+    restart: always
 
